@@ -25,7 +25,7 @@ export async function getRecipe(req, res) {
         "1/4 cup parsley",
         "8 oz fettuccine pasta"
       ],
-      cookingTime: 30,
+      cookingTime: 35,
       instructions: [
         "Cook pasta according to package instructions",
         "Season chicken with salt, pepper, Italian seasoning, and paprika",
@@ -44,6 +44,8 @@ export async function getRecipe(req, res) {
       ],
       image: "https://www.budgetbytes.com/wp-content/uploads/2022/07/Chicken-Alfredo-bowl.jpg",
     }, res);
+
+
 
   } catch (error) {
     return httpResponse(500, error.message, null, res);
